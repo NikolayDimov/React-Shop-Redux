@@ -6,3 +6,9 @@ export const store = configureStore({
         cart: cartSlice.reducer,
     },
 });
+
+export type AppDispatch = typeof store.dispatch;
+
+// test for type
+// const name = "Max";
+// type N = typeof name;

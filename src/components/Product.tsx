@@ -1,5 +1,5 @@
-import { useDispatch } from "react-redux";
 import { addToCard } from "../store/cart-slice";
+import { useCartDispatch } from "../store/hooks";
 
 type ProductProps = {
     id: string;
@@ -10,7 +10,7 @@ type ProductProps = {
 };
 
 export default function Product({ id, image, title, price, description }: ProductProps) {
-    const dispatch = useDispatch();
+    const dispatch = useCartDispatch();
 
     function handleAddToCart() {
         dispatch(addToCard({ id, title, price }));

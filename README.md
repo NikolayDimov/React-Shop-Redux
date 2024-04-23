@@ -1,1 +1,1 @@
-# React-Shop-Redux-
+# React-Shop-Redux
